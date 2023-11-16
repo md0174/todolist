@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body {
+    position: relative;
+    background-image: url('ToDoList.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addButton {
+    padding: 15px;
+    width: 200px;
+    cursor: pointer;
+    background-color: white;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    border-radius: 5px;
+}
+
+.todoList {
+    list-style: none;
+    padding: 0;
+}
+
+.todoList:hover {
+    color: white;
+}
+
+.removeButton {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
 }
